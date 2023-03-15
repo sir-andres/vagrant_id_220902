@@ -2,7 +2,7 @@
 
  export GITLABCI_NAME=runner-docker
  export GITLABCI_URL=https://gitlab.com/
- export GITLABCI_TOKEN=GR1348941_KT5QH9GTzB_AG_jkR7d
+ export GITLABCI_TOKEN=YOUR_TOKEN
  export GITLABCI_EXECUTOR=docker
  export GITLABCI_TAGS='docker'
 
