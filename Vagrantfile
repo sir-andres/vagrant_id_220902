@@ -12,15 +12,5 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", path: "install_docker.sh" #inline: <<-SHELL
   
-  config.vm.provision 'gitlab', type: 'shell', path: 'gitlab-runner-docker.sh',
-  env: {
-      GITLABCI_NAME: ENV['GITLABCI_NAME'],
-      GITLABCI_URL: ENV['GITLABCI_URL'],
-      GITLABCI_TOKEN: ENV['GITLABCI_TOKEN'],
-      GITLABCI_EXECUTOR: ENV['GITLABCI_EXECUTOR'],
-      GITLABCI_TAGS: ENV['GITLABCI_TAGS'],
-     }
-  #   apt-get update
-  #   apt-get install -y apache2
-  # SHELL
+  config.vm.provision 'gitlab', type: 'shell', path: 'gitlab-runner-docker.sh'
 end
